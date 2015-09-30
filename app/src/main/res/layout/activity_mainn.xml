@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cqs.wait.MainnActivity">
+
+    <ImageView
+        android:id="@+id/iv_usertou"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/robot"/>
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_below="@id/iv_usertou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小花"
+        android:textSize="22dp"
+        />
+
+    <Button
+        android:id="@+id/bt_vote"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="议案表决"
+        />
+    <Button
+        android:id="@+id/bt_look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_vote"
+        android:layout_centerHorizontal="true"
+        android:text="查看议案"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:id="@+id/result"
+        android:layout_below="@id/bt_vote"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/bt_exit"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:text="退出系统"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
